@@ -10138,6 +10138,7 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 .text-light {
+   font-family: 'Lexend Tera', sans-serif;
   color: #f8f9fa !important;
 }
 
