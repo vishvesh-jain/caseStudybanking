@@ -141,7 +141,7 @@ h3
 }
 /* to set width, height of select drop down menu for savings account*/
 #select_option {
-     width: 250px;
+     width: 150px;
     height: 50px;
 }
 
@@ -357,4 +357,13 @@ footer {
 	color: antiquewhite;
 	font-size: 15px;
 	
+}
+
+#transfer_amt {
+    height: 50px
+        
+}
+
+#withdraw_amt {
+    height: 50px;
 }
