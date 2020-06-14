@@ -69,3 +69,16 @@ function validateDeleteForm()
 	}
 
 }
+
+
+document.getElementById("radio").addEventListener("click" , functionRadio);
+
+function functionRadio()
+{
+	window.location.replace("statementByDate.html");
+
+}
+
+window.onload = function() {
+  $("#statement_container").hide();
+};
