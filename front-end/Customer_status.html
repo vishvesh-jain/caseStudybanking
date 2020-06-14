@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="js/validateForm.js"></script>
 
 
-	<title>Update Customer</title>
+	<title>Customer Status</title>
 	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -110,48 +110,48 @@
 
 <!-- -----------------------------------------CONTAINER--------------------------------------------------- -->
 
-<form name="update" action="" method="POST" onsubmit="return validateUpdateForm()">
-
-	<div class="login container">
-		<div class="block1 ">
-			<form action="" method="">
-				<h2 id ="special"> Customer SSN ID : DUMMY123 </h2> 
-				<h2 id ="special"> Customer ID : DUMMY567</h2>
-				<h2 id ="special"> Old Customer Name: DUMMY SHARMA</h2>
 
 
-				<div class="form_input">
-
-				<div class="input_group">	
-					<a id="special"> New Name :</a><input type="text" name="usr_name" placeholder="New Customer name">
-					<br/>
-				</div>
-
-				<h2 id ="special"> Old Address:     DUMMY GARH </h2>
-
-				<div class="input_group">
-					<a id="special">New Address : </a>
-					<input type="text" name="address" placeholder="New Address">
-				<br/>
-			</div>
-
-				<h2 id ="special"> Old Age:     D28 </h2>
-
-				<div class="input_group">
-					<a id="special">New Age : </a>
-					<input type="text" name="age" placeholder="New Age">
-					<br/>
-				</div>
-					
-					<button type="submit" value="Submit" class="btn-login">Update</button>
-					<br/>
-					
-					
-
-				</div>
-
-			</form>
+	<div class="login container" id="special_container">
+		<div class="block1 " style="height: 800px">
 			
+
+				  <table class="table border border-primary border-top">
+  <thead>
+    <tr>
+      <th scope="col">Customer ID</th>
+      <th scope="col">SSN ID</th>
+      <th scope="col">Status</th>
+      <th scope="col">Message</th>
+      <th scope="col">Last Updated</th>
+      <th scope="col">Operations</th>
+      <th scope="col">View Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">121</th>
+      <td>DUMMY12</td>
+      <td>ACTIVE</td>
+      <td>HELLO</td>
+      <td>TODAY</td>
+      <a href="google.com"><td>REFRESH</td></a>
+      <a><td>VIEW DETAILS</td></a>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      
+    </tr>
+  </tbody>
+</table>
+
+				</div>
+
+				
 		</div>
 	</div>
 
@@ -160,6 +160,7 @@
 
 
 <!-- -------------------------FOOTER------------------------------- -->
+
 <footer class="footer-distributed">
   <div class="footer-left">
     <a class="footer-heading" href="#">RAKHSA BANK</a>
@@ -199,7 +200,6 @@
     <p class="footer-company-name">© 2020 Rakhsa Bank</p>
   </center>
 </footer>
-
 
 
 <!-- --------------------------FOOTER END-------------------------- -->

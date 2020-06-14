@@ -3,10 +3,10 @@
 <head>
 	
 	<!-- Form validation script -->
-	<script type="text/javascript" src="js/validateForm.js"></script>
 
 
-	<title>Update Customer</title>
+
+	<title>Account Statement</title>
 	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -110,40 +110,68 @@
 
 <!-- -----------------------------------------CONTAINER--------------------------------------------------- -->
 
-<form name="update" action="" method="POST" onsubmit="return validateUpdateForm()">
+<form name="statement" action="" method="POST" onsubmit="return validateDeleteForm()" >
 
 	<div class="login container">
-		<div class="block1 ">
-			<form action="" method="">
-				<h2 id ="special"> Customer SSN ID : DUMMY123 </h2> 
-				<h2 id ="special"> Customer ID : DUMMY567</h2>
-				<h2 id ="special"> Old Customer Name: DUMMY SHARMA</h2>
-
+		<div class="block1 " style="height: 800px">
+			
 
 				<div class="form_input">
+        <div class="input_group"> 
+          <a id="special"> Account Id :</a>
+          <input type="text" name="Account_Id" placeholder="Account Id">
+          <br/>
+        </div>
 
-				<div class="input_group">	
-					<a id="special"> New Name :</a><input type="text" name="usr_name" placeholder="New Customer name">
-					<br/>
-				</div>
 
-				<h2 id ="special"> Old Address:     DUMMY GARH </h2>
+				<div class="input-group " >
+        <div class="input-group-prepend">
+        <div class="input-group-text input_group">
+            <input type="radio" name="radio" value ="Number"aria-label="Radio button for following text input">
+            <p id="special">Last Number of Transaction</p>
+            
+        </div>
+     </div>
+      </div>
 
-				<div class="input_group">
-					<a id="special">New Address : </a>
-					<input type="text" name="address" placeholder="New Address">
-				<br/>
-			</div>
+        <div class="input-group " >
+        <div class="input-group-prepend">
+        <div class="input-group-text input_group">
+            <input id="radio" type="radio" name ="radio" aria-label="Radio button for following text input" value="start-end date">
 
-				<h2 id ="special"> Old Age:     D28 </h2>
+            <p id="special">Start-End Date</p>
+            
+        </div>
+     </div>
+      </div>
 
-				<div class="input_group">
-					<a id="special">New Age : </a>
-					<input type="text" name="age" placeholder="New Age">
-					<br/>
-				</div>
+      <div class="d-flex ">
+  <div class="dropdown mr-1 input_group">
+    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+      Number of Transcations
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+      <a class="dropdown-item" href="#">1</a>
+      <a class="dropdown-item" href="#">2</a>
+      <a class="dropdown-item" href="#">3</a>
+      <a class="dropdown-item" href="#">4</a>
+      <a class="dropdown-item" href="#">5</a>
+
+      <a class="dropdown-item" href="#">6</a>
+      <a class="dropdown-item" href="#">7</a>
+      <a class="dropdown-item" href="#">8</a>
+      <a class="dropdown-item" href="#">9</a>
+      <a class="dropdown-item" href="#">10</a>
+
+    </div>
+  </div>
+</div>
+
+        
+        
+
 					
-					<button type="submit" value="Submit" class="btn-login">Update</button>
+					<button type="submit" value="Submit" class="btn-login">Submit</button>
 					<br/>
 					
 					
@@ -160,6 +188,8 @@
 
 
 <!-- -------------------------FOOTER------------------------------- -->
+
+<!-- Footer -->
 <footer class="footer-distributed">
   <div class="footer-left">
     <a class="footer-heading" href="#">RAKHSA BANK</a>
@@ -201,10 +231,9 @@
 </footer>
 
 
-
 <!-- --------------------------FOOTER END-------------------------- -->
 
-
+  <script type="text/javascript" src="js/validateForm.js"></script>
 
 
 </body>

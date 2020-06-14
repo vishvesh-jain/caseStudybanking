@@ -539,16 +539,17 @@ pre code {
 }
 
 .container {
-  width: 100%;
+  width: 500px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  height:550px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 100px) {
   .container {
-    max-width: 540px;
+    max-width: 50px;
   }
 }
 
@@ -566,19 +567,18 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 500px;
   }
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   width: 100%;
+
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
+ }
 
-@media (min-width: 576px) {
+@media (min-width: 100px) {
   .container, .container-sm {
     max-width: 540px;
   }

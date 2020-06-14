@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<!-- Form validation script -->
-	<script type="text/javascript" src="js/validateForm.js"></script>
-
-
-	<title>Update Customer</title>
+	<title>Delete Account</title>
 	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -110,40 +105,41 @@
 
 <!-- -----------------------------------------CONTAINER--------------------------------------------------- -->
 
-<form name="update" action="" method="POST" onsubmit="return validateUpdateForm()">
-
-	<div class="login container">
-		<div class="block1 ">
+<form action="" method="POST">
+<body class="container">
+	<div class="login">
+		<div class="block1">
 			<form action="" method="">
-				<h2 id ="special"> Customer SSN ID : DUMMY123 </h2> 
-				<h2 id ="special"> Customer ID : DUMMY567</h2>
-				<h2 id ="special"> Old Customer Name: DUMMY SHARMA</h2>
-
-
+                <div class="page_title"><center>Delete Account</center></div>
+                <br>
+                <br>
 				<div class="form_input">
 
 				<div class="input_group">	
-					<a id="special"> New Name :</a><input type="text" name="usr_name" placeholder="New Customer name">
+					<a id="special">Account ID :</a>
+                    <select id ="select_option" name="account_type" >
+                        <!--
+                        get account ids from database
+                        -->
+                        
+                        <option value="temp_123456789" id ="select_option option">temp 1324567890</option>
+                        <option value="temp_987645321" id ="select_option option">temp 9876543210</option>
+                    </select>
+                    
 					<br/>
 				</div>
-
-				<h2 id ="special"> Old Address:     DUMMY GARH </h2>
-
 				<div class="input_group">
-					<a id="special">New Address : </a>
-					<input type="text" name="address" placeholder="New Address">
-				<br/>
-			</div>
-
-				<h2 id ="special"> Old Age:     D28 </h2>
-
-				<div class="input_group">
-					<a id="special">New Age : </a>
-					<input type="text" name="age" placeholder="New Age">
-					<br/>
+					<a id="special">Account Type:</a>
+                    <!--
+                    get account type from dB for the selected account
+                    -->
+                    <input type="text" value="value from db" readonly>
+                    
 				</div>
-					
-					<button type="submit" value="Submit" class="btn-login">Update</button>
+
+
+	
+					<button type="submit" value="Login" class="btn-login">Delete Account</button>
 					<br/>
 					
 					
@@ -158,49 +154,46 @@
 <!-- -----------------------------------------CONTAINER END-------------------------------------------------->
 
 
-
 <!-- -------------------------FOOTER------------------------------- -->
 <footer class="footer-distributed">
-  <div class="footer-left">
-    <a class="footer-heading" href="#">RAKHSA BANK</a>
-    <p class="footer-company-about">
-      <br>
-      <span>About Us</span>
-      Rakhsa Bank was founded with the objective of providing with services based on Reatil Banking operations. The Retail internet banking of Rakhsa Bank offeres numerous services and products to cater its customer's requirements
-    </p>
-    <br>
-  </div>
-  <div class="footer-center">
-    <a class="footer-heading" href="#">Services</a>
-    <br>
-    <br>
-    <p class="footer-links">
-      <a href="#">Retail and Consumer Banking</a>
-      <br>
-      <a href="#">Personal Internet Banking</a>
-      <br>
-      <a href="#">Corporate Internet Banking</a>
-      <br>
-      <a href="#">Debit and Credit Cards</a>
-    </p>
-  </div>
-  <div class="footer-right">
-    <a class="footer-heading" href="#">Contact US</a>
-    <br>
-    <br>
-    <div class="footer-right-text">
-      <p><span>Email: </span><br><br>
-        <span>Contact No:</span><br><br>
-        <span>Address:</span>
-      </p>
-    </div>
-  </div>
-  <center>
-    <p class="footer-company-name">© 2020 Rakhsa Bank</p>
-  </center>
+	<div class="footer-left">
+		<a class="footer-heading" href="#">RAKHSA BANK</a>
+		<p class="footer-company-about">
+			<br>
+			<span>About Us</span>
+			Rakhsa Bank was founded with the objective of providing with services based on Reatil Banking operations. The Retail internet banking of Rakhsa Bank offeres numerous services and products to cater its customer's requirements
+		</p>
+		<br>
+	</div>
+	<div class="footer-center">
+		<a class="footer-heading" href="#">Services</a>
+		<br>
+		<br>
+		<p class="footer-links">
+			<a href="#">Retail and Consumer Banking</a>
+			<br>
+			<a href="#">Personal Internet Banking</a>
+			<br>
+			<a href="#">Corporate Internet Banking</a>
+			<br>
+			<a href="#">Debit and Credit Cards</a>
+		</p>
+	</div>
+	<div class="footer-right">
+		<a class="footer-heading" href="#">Contact US</a>
+		<br>
+		<br>
+		<div class="footer-right-text">
+			<p><span>Email: </span><br><br>
+				<span>Contact No:</span><br><br>
+				<span>Address:</span>
+			</p>
+		</div>
+	</div>
+	<center>
+		<p class="footer-company-name">© 2020 Rakhsa Bank</p>
+	</center>
 </footer>
-
-
 
 <!-- --------------------------FOOTER END-------------------------- -->
 

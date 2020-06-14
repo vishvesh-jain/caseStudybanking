@@ -3,10 +3,11 @@
 <head>
 	
 	<!-- Form validation script -->
-	<script type="text/javascript" src="js/validateForm.js"></script>
 
 
-	<title>Update Customer</title>
+
+	<title>StatementByDate</title>
+
 	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -110,40 +111,49 @@
 
 <!-- -----------------------------------------CONTAINER--------------------------------------------------- -->
 
-<form name="update" action="" method="POST" onsubmit="return validateUpdateForm()">
+<form name="statement" action="" method="POST" onsubmit="return validateDeleteForm()" >
 
 	<div class="login container">
-		<div class="block1 ">
-			<form action="" method="">
-				<h2 id ="special"> Customer SSN ID : DUMMY123 </h2> 
-				<h2 id ="special"> Customer ID : DUMMY567</h2>
-				<h2 id ="special"> Old Customer Name: DUMMY SHARMA</h2>
-
+		<div class="block1 " style="height: 800px">
+			
 
 				<div class="form_input">
+        <div class="input_group"> 
+          <a id="special"> Account Id :</a>
+          <input type="text" name="Account_Id" placeholder="Account Id">
+          <br/>
+        </div>
 
-				<div class="input_group">	
-					<a id="special"> New Name :</a><input type="text" name="usr_name" placeholder="New Customer name">
-					<br/>
-				</div>
+<div class="input_group" id="special">
+	<label for="birthday">Start date:</label>
+  <input type="date" name="start-date">
 
-				<h2 id ="special"> Old Address:     DUMMY GARH </h2>
+</div>
 
-				<div class="input_group">
-					<a id="special">New Address : </a>
-					<input type="text" name="address" placeholder="New Address">
-				<br/>
-			</div>
+<div class="input_group" id="special">
+	<label for="birthday">End date:</label>
+  <input type="date" name="end-date">
+</div>
+        
+  
 
-				<h2 id ="special"> Old Age:     D28 </h2>
+  
 
-				<div class="input_group">
-					<a id="special">New Age : </a>
-					<input type="text" name="age" placeholder="New Age">
-					<br/>
-				</div>
+
+		
+
+      
+
+      
+    
+  </div>
+</div>
+
+        
+        
+
 					
-					<button type="submit" value="Submit" class="btn-login">Update</button>
+					<button type="submit" value="Submit" class="btn-login">Submit</button>
 					<br/>
 					
 					
@@ -155,11 +165,55 @@
 		</div>
 	</div>
 
+
+
+
+
+	<!-- Container for table data -->
+
+	<div class="login container" id="statement_container">
+		<div class="block1 " style="height: 800px">
+			
+
+				  <table class="table border border-primary border-top">
+  <thead>
+    <tr>
+      <th scope="col">Transaction ID</th>
+      <th scope="col">Description</th>
+      <th scope="col">Date(YYYY-MM-DD)</th>
+      <th scope="col">Amount</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">0012136</th>
+      <td>Withdraw</td>
+      <td>2020-05-14</td>
+      <td>4000</td>
+      
+    </tr>
+    
+  </tbody>
+</table>
+
+				</div>
+				<button class="btn btn-warning rounded-pill btn-sm my-2 my-sm-0" type="submit">Download As PDF</button>
+				<button class="btn btn-warning rounded-pill btn-sm my-2 my-sm-0" type="submit">Download As Excel File</button>
+				
+		</div>
+	</div>
+
+
+	<!-- Container for table data End -->
+
 <!-- -----------------------------------------CONTAINER END-------------------------------------------------->
 
 
 
 <!-- -------------------------FOOTER------------------------------- -->
+
+<!-- Footer -->
 <footer class="footer-distributed">
   <div class="footer-left">
     <a class="footer-heading" href="#">RAKHSA BANK</a>
@@ -201,10 +255,12 @@
 </footer>
 
 
-
 <!-- --------------------------FOOTER END-------------------------- -->
 
 
+<!-- Script for form validtaion -->
+  <script type="text/javascript" src="js/validateForm.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 
 </body>

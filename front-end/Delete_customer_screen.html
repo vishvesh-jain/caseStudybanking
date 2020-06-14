@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="js/validateForm.js"></script>
 
 
-	<title>Update Customer</title>
+	<title>Delete Customer</title>
 	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -110,40 +110,47 @@
 
 <!-- -----------------------------------------CONTAINER--------------------------------------------------- -->
 
-<form name="update" action="" method="POST" onsubmit="return validateUpdateForm()">
+<form name="delete" action="" method="POST" onsubmit="return validateDeleteForm()" >
 
 	<div class="login container">
-		<div class="block1 ">
+		<div class="block1 " style="height: 800px">
 			<form action="" method="">
-				<h2 id ="special"> Customer SSN ID : DUMMY123 </h2> 
-				<h2 id ="special"> Customer ID : DUMMY567</h2>
-				<h2 id ="special"> Old Customer Name: DUMMY SHARMA</h2>
-
 
 				<div class="form_input">
+        <div class="input_group"> 
+          <a id="special"> SSN Id :</a><input type="text" name="SSN_Id" placeholder="SSN Id">
+          <br/>
+        </div>
 
-				<div class="input_group">	
-					<a id="special"> New Name :</a><input type="text" name="usr_name" placeholder="New Customer name">
-					<br/>
-				</div>
-
-				<h2 id ="special"> Old Address:     DUMMY GARH </h2>
 
 				<div class="input_group">
-					<a id="special">New Address : </a>
-					<input type="text" name="address" placeholder="New Address">
-				<br/>
-			</div>
+          <a id="special">Customer Id : </a>
+          <input type="text" name="Customer_Id" placeholder="Customer Id">
+          <br/>
+        </div>
 
-				<h2 id ="special"> Old Age:     D28 </h2>
+        <div class="input_group">
+          <a id="special">Name : </a>
+          <input type="text" name="Customer_Name" placeholder="Customer Name">
+          <br/>
+        </div>
 
-				<div class="input_group">
-					<a id="special">New Age : </a>
-					<input type="text" name="age" placeholder="New Age">
-					<br/>
-				</div>
+        
+        <div class="input_group">
+          <a id="special">Age : </a>
+          <input type="text" name="Age" placeholder="Age">
+          <br/>
+        </div>
+
+        <div class="input_group">
+          <a id="special">Address : </a>
+          <input type="text" name="Address" placeholder="Address">
+          <br/>
+        </div>
+
+
 					
-					<button type="submit" value="Submit" class="btn-login">Update</button>
+					<button type="submit" value="Submit" class="btn-login">Delete</button>
 					<br/>
 					
 					
@@ -160,6 +167,8 @@
 
 
 <!-- -------------------------FOOTER------------------------------- -->
+
+<!-- Footer -->
 <footer class="footer-distributed">
   <div class="footer-left">
     <a class="footer-heading" href="#">RAKHSA BANK</a>
@@ -199,7 +208,6 @@
     <p class="footer-company-name">© 2020 Rakhsa Bank</p>
   </center>
 </footer>
-
 
 
 <!-- --------------------------FOOTER END-------------------------- -->
