@@ -509,3 +509,12 @@ footer {
 #withdraw_amt {
     height: 50px;
 }
+
+
+#statement_container
+{
+   width: 560px;
+  font-family: 'Lexend Tera', sans-serif;
+  font-size: 13px;
+
+}
